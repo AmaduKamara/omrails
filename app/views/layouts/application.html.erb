@@ -7,9 +7,16 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
   </head>
 
   <body>
+    <!-- Page Navigation Links -->
+    <%= link_to 'Home', root_path  %>
+    <%= link_to 'About', about_path %>
+    <%= link_to "Posts", posts_path %>
+    <%= link_to 'Contact Us', contact_path %>
+    
     <%= yield %>
   </body>
 </html>
